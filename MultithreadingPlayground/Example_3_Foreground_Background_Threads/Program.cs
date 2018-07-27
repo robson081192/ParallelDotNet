@@ -10,10 +10,11 @@ namespace Example_3_Foreground_Background_Threads
             //  start background thread
             Thread backgroundThread = new Thread(() =>
             {
+                Thread.Sleep(5000);
                 Console.WriteLine("Thread is starting, press ENTER to continue...");
                 Console.ReadKey();
             });
-            backgroundThread.IsBackground = false;
+            backgroundThread.IsBackground = true;
             backgroundThread.Start();
 
             //  main thread ends here
