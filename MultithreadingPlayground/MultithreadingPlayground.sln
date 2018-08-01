@@ -24,11 +24,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Example_4_Race_Conditions",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Example_5_Locking_1", "Example_5_Locking_1\Example_5_Locking_1.csproj", "{3938DCAF-F829-46BF-B154-E60D92F65C56}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Example_6_Locking_2", "Example_6_Locking_2\Example_6_Locking_2.csproj", "{2ED4F0B0-0FB4-4070-B167-9C59C50656A0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Example_6_Locking_2", "Example_6_Locking_2\Example_6_Locking_2.csproj", "{2ED4F0B0-0FB4-4070-B167-9C59C50656A0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Example_7_Locking_3_Nested_Locks", "Example_7_Locking_3_Nested_Locks\Example_7_Locking_3_Nested_Locks.csproj", "{5CBBB4DF-D851-45C4-9006-4F3C471F2435}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Example_7_Locking_3_Nested_Locks", "Example_7_Locking_3_Nested_Locks\Example_7_Locking_3_Nested_Locks.csproj", "{5CBBB4DF-D851-45C4-9006-4F3C471F2435}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Example_8_Thread_Synchronization_1", "Example_8_Thread_Synchronization_1\Example_8_Thread_Synchronization_1.csproj", "{F743A104-418B-4FAB-B4EB-26AE448959F8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Example_8_Thread_Synchronization_1", "Example_8_Thread_Synchronization_1\Example_8_Thread_Synchronization_1.csproj", "{F743A104-418B-4FAB-B4EB-26AE448959F8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Example_1_Asynchronous_Data_Calculation", "Example_1_Asynchronous_Data_Calculation\Example_1_Asynchronous_Data_Calculation.csproj", "{CB2140EF-CE75-4211-AB22-06166D814417}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Example_2_Initialize_And_Cancel_Tasks", "Example_2_Initialize_And_Cancel_Tasks\Example_2_Initialize_And_Cancel_Tasks.csproj", "{03BD0C20-8F81-4517-B661-BFF196E0F84B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Example_3_Parent_And_Child_Tasks", "Example_3_Parent_And_Child_Tasks\Example_3_Parent_And_Child_Tasks.csproj", "{DD74FB60-5C3F-4E7F-92C4-C35F27A14497}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -68,6 +74,18 @@ Global
 		{F743A104-418B-4FAB-B4EB-26AE448959F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F743A104-418B-4FAB-B4EB-26AE448959F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F743A104-418B-4FAB-B4EB-26AE448959F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CB2140EF-CE75-4211-AB22-06166D814417}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB2140EF-CE75-4211-AB22-06166D814417}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CB2140EF-CE75-4211-AB22-06166D814417}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CB2140EF-CE75-4211-AB22-06166D814417}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03BD0C20-8F81-4517-B661-BFF196E0F84B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03BD0C20-8F81-4517-B661-BFF196E0F84B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03BD0C20-8F81-4517-B661-BFF196E0F84B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03BD0C20-8F81-4517-B661-BFF196E0F84B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD74FB60-5C3F-4E7F-92C4-C35F27A14497}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD74FB60-5C3F-4E7F-92C4-C35F27A14497}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD74FB60-5C3F-4E7F-92C4-C35F27A14497}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD74FB60-5C3F-4E7F-92C4-C35F27A14497}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -81,6 +99,9 @@ Global
 		{2ED4F0B0-0FB4-4070-B167-9C59C50656A0} = {BCC51B5E-C95B-4BA7-84D4-85B887A7311C}
 		{5CBBB4DF-D851-45C4-9006-4F3C471F2435} = {BCC51B5E-C95B-4BA7-84D4-85B887A7311C}
 		{F743A104-418B-4FAB-B4EB-26AE448959F8} = {BCC51B5E-C95B-4BA7-84D4-85B887A7311C}
+		{CB2140EF-CE75-4211-AB22-06166D814417} = {B0955D98-3F34-40CC-A725-10B0EC613B65}
+		{03BD0C20-8F81-4517-B661-BFF196E0F84B} = {B0955D98-3F34-40CC-A725-10B0EC613B65}
+		{DD74FB60-5C3F-4E7F-92C4-C35F27A14497} = {B0955D98-3F34-40CC-A725-10B0EC613B65}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C709A133-312E-4710-B754-C1DCB8DA6509}

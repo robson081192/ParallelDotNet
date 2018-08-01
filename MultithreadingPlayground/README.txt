@@ -21,3 +21,16 @@
 - If you want to safely pass data between two threads, you need to synchronise the threads.
 - Synchronization can be created using AutoResetEvent. A call to WaitOne suspends a thread, and a call to Set resumes the thread.
 - For a robust communication channel you need two AutoResetEvents with calls to WaitOne and Set at both ends.
+
+#--- TASKS ---#
+- The TPL provides a Task class for asynchronously performing a unit of work and returning the result to another thread.
+- You access the Result property when you need the result. The property blocks it the result is not yet available.
+- Tasks are lightweight abstractions of an asynchronous unit of work. You can safely create hundreds or thousands of tasks.
+- When a task has been created with TaskCreationOptions.LongRunning it's being dettached from the thread pool.
+- Use the Task class for tasks that do net return a result. The Wait method blocks until the task has completed.
+- Use the Task<T> class for tasjs that do return a result. The Result property blocks until the task has completed.
+- Tasks execute on the .NET runtime thread pool. For long-running and I/O bound tasks you can probide the LongRunning option to execute the on a non-pool thread
+- Any exceptions thrown by a task propagate to the calling code and are automatically re-thrown in the Wait method and Result property.
+- Tasks can be initialised with either a startup object or by capturing variables in their lambda expression.
+- Visual Studio displays the AsyncState task property in the Parallel Tasks window. If you store a meaningful task name, here it will greatly aid debugging.
+- Tasks can be cancelled with a cancellation token.
