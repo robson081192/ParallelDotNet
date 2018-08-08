@@ -34,3 +34,27 @@
 - Tasks can be initialised with either a startup object or by capturing variables in their lambda expression.
 - Visual Studio displays the AsyncState task property in the Parallel Tasks window. If you store a meaningful task name, here it will greatly aid debugging.
 - Tasks can be cancelled with a cancellation token.
+- Task continuations - sequential work of multiple tasks (one is being run after the previous completed).
+
+#--- Parallel work ---#
+- Split a problem into many units of work that can execute in parallel.
+- Execute the units of work.
+- Assemble the finished work into a result.
+- The common name for this process is MapReduce.
+
+#--- PLINQ ---#
+- PLINQ automatically creates the network of tasks to execute the PLINQ expression.
+- You have no imperative control overr the task network.
+- You can only declare the sequence of operations to execute on the items in the dataset.
+- Use PLINQ if you only need to performa a sequence of operations on the items in a large dataset.
+- PLINQ does not preserve the order of the items in the dataset.
+- Operations Concat, First, FirstOrDefault, Last, LastOrDefault, Skip, SkipWhile, Take, TakeWhile, Zip are in .NET 4 sometimes sequential (.NET 4.5 and above always parallel)
+- Positional operations Select, SelectMany, SkipWhile, TakeWhile, Where are sometimes sequential also in all .NET version.
+- Please visit https://blogs.msdn.microsoft.com/pfxteam/2011/11/10/plinq-queries-that-run-in-parallel-in-net-4-5/
+- Please visit https://docs.microsoft.com/en-us/dotnet/standard/parallel-programming/understanding-speedup-in-plinq
+
+#--- Solutions and their usages ---#
+- Tasks - Complex process + small shared data
+- Parallel class - Complex process + large shared data
+- Tasks OR PLINQ - Sequence of tasks on items + small dataset
+- PLINQ - sequence of tasks on items + large dataset
