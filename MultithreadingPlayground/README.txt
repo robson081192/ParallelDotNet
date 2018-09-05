@@ -16,6 +16,7 @@
 - The Monitor class also has a TryEnter method that supports a Lock timeout value.
 - Lock requires a reference type synchronisation object. You can use any object you like, but a unique private object field is recommended.
 - You can nest lock statements. The critical section is unlocked, when you exit the outermost lock.
+- Assignment operations may also not be atomic. Great example -> assignment of 64-bit values on a 32-bit operating system.
 
 #--- THREAD SYNCHRONIZATION ---#
 - If you want to safely pass data between two threads, you need to synchronise the threads.
